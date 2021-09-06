@@ -12,7 +12,8 @@ public class App {
         verb = strIO("Enter a verb: ", sc);
         adjective = strIO("Enter an adjective: ", sc);
         adverb = strIO("Enter an adverb: ", sc);
-        System.out.println("Do you " + verb + " your " + adjective + " " + noun + " " + adverb + "? That's hilarious!");
+        String finalString = String.format("Do you %s your %s %s %s? That's hilarious!",verb,adjective,noun,adverb);
+        System.out.println(finalString);
         sc.close();
     }
 
